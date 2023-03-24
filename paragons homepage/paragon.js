@@ -6,6 +6,7 @@ setInterval(()=>{
 if(count===0){
     change.innerHTML=("OUR HOME IS OUR BEAUTY");
     count++;
+    
 }else if(count===1){
     change.innerHTML=("WE DO THE BEST TRY AND SEE");
     count++;
