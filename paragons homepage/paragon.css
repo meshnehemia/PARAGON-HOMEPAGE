@@ -41,9 +41,11 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .logo li{
+    width: 170px;
     border: 1px solid brown;
     padding:0px 10px 0px 10px;
     border-radius: 20px;
+    display: flex;
     height: 100%;
 }
 .home{
@@ -268,7 +270,7 @@ a{
     box-shadow: 2px 2px 4px #9b6a6a;
     width:100%;
     flex-wrap: wrap;
-    height: 700px;
+    height: 600px;
     background-color: #817c7c;
     padding-left: 20px;
 }
@@ -281,10 +283,14 @@ a{
 .person{
     border-radius: 5px;
     background-color: #bd8a4c;
-    margin: 20px 20px 20px 20px;
+    margin: 20px 20px 0px 20px;
     padding: 10px 10px 20px 10px;
     width: 21%;
+    height: 250PX;
 
+}
+.person:hover{
+    box-shadow:2px 2px 4px 4px rgb(130, 190, 118);
 }
 .person1{
     display: flex;
@@ -293,4 +299,22 @@ a{
 .person1 div{
     width: 100px;
     padding:0px 10px 0px 10px ;
+}
+.light{
+    width: 10px;
+    height: 10px;
+    margin:10px 0px 0px 5px;
+    background-color: red;
+    border-radius: 50%;
+    animation: dolight;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes dolight{
+        0%{
+            background-color: red;
+        }
+        100%{
+            background-color: green;
+        }
 }
